@@ -19,7 +19,7 @@ export class PgvectorStore<T = any> implements VectorStore<T> {
   private indexType: string;
 
   constructor(private options: PgvectorStoreOptions = {}) {
-    this.tableName = options.tableName || 'semantic_search_embeddings';
+    this.tableName = options.tableName || 'semnova_embeddings';
     this.schema = options.schema || 'public';
     this.indexType = options.indexType || 'none';
 

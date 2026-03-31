@@ -17,11 +17,11 @@ export class SqliteStore<T = any> implements VectorStore<T> {
   private useVss: boolean;
 
   constructor(private options: SqliteStoreOptions = {}) {
-    this.tableName = options.tableName || 'semantic_search_embeddings';
+    this.tableName = options.tableName || 'semnova_embeddings';
     this.useVss = options.useVss || false;
     
     try {
-      this.db = new Database(options.dbPath || './semantic_search.db');
+      this.db = new Database(options.dbPath || './semnova.db');
     } catch (err: any) {
       throw new StoreConnectionError(`Failed to initialize SQLite database: ${err.message}`);
     }

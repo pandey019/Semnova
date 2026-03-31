@@ -1,7 +1,14 @@
 <p align="center">
-  <h1 align="center">SemanticSearch.js</h1>
+  <h1 align="center">Semnova</h1>
   <p align="center">
     Zero API keys. Zero cloud costs. Local AI-powered semantic search for Node.js.
+  </p>
+  <p align="center">
+    <a href="https://www.npmjs.com/package/semnova"><img src="https://img.shields.io/npm/v/semnova.svg?style=flat-square" alt="NPM Version" /></a>
+    <a href="https://github.com/pandey019/Semnova/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License" /></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/Language-TypeScript-blue.svg?style=flat-square" alt="TypeScript" /></a>
+    <a href="https://github.com/pandey019/Semnova/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+    <a href="https://github.com/pandey019/Semnova/actions"><img src="https://img.shields.io/github/actions/workflow/status/pandey019/Semnova/test.yml?branch=main&style=flat-square" alt="Build Status" /></a>
   </p>
   <p align="center">
     <a href="#installation">Installation</a> •
@@ -17,7 +24,7 @@
 
 ## What Is This?
 
-SemanticSearch.js lets you add **meaning-based search** to any Node.js app in 3 lines of code. Instead of matching exact keywords, it understands what the user *means*.
+Semnova lets you add **meaning-based search** to any Node.js app in 3 lines of code. Instead of matching exact keywords, it understands what the user *means*.
 
 ```text
 "I want to edit videos"  →  finds "AI Video Editor", "Clip Maker Pro", "Descript"
@@ -30,7 +37,7 @@ Everything runs **locally on your machine**. No OpenAI. No Anthropic. No API key
 
 ## Why Use This?
 
-| Problem | SemanticSearch.js Solution |
+| Problem | Semnova Solution |
 |---|---|
 | User searches "laptop" but product is listed as "notebook computer" | Understands synonyms — finds it anyway |
 | API key costs $20–200/month for embeddings | Free forever — runs a 22MB local model |
@@ -43,7 +50,7 @@ Everything runs **locally on your machine**. No OpenAI. No Anthropic. No API key
 ## Installation
 
 ```bash
-npm install semantic-search-js
+npm install semnova
 ```
 
 That's it. The 22MB AI model downloads automatically on first use and caches locally.
@@ -60,7 +67,7 @@ That's it. The 22MB AI model downloads automatically on first use and caches loc
 ## Quick Start
 
 ```typescript
-import { createIndex } from "semantic-search-js";
+import { createIndex } from "semnova";
 
 // 1. Create an index
 const index = await createIndex();
@@ -163,7 +170,7 @@ const stats = await index.stats();
 Standalone embedding function.
 
 ```typescript
-import { embed } from "semantic-search-js";
+import { embed } from "semnova";
 
 const vector = await embed("Hello world");
 // [0.12, -0.45, 0.89, ...] (384 numbers)
