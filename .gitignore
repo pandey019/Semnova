@@ -5,3 +5,5 @@ dist
 test-sqlite.db
 .env
 coverage
+docs/.vitepress/dist
+docs/.vitepress/cache
