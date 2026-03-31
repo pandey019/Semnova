@@ -1,0 +1,23 @@
+{
+  "name": "semnova-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example application testing all databases for Semnova",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "semnova": "file:..",
+    "better-sqlite3": "^12.0.0",
+    "pg": "^8.11.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/better-sqlite3": "^7.6.9"
+  }
+}
