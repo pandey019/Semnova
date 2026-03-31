@@ -45,9 +45,21 @@
       "optional": true
     }
   },
-  "keywords": [],
+  "keywords": [
+    "semantic",
+    "search",
+    "vector",
+    "embeddings",
+    "ai",
+    "pgvector",
+    "sqlite",
+    "local"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "type": "commonjs",
   "dependencies": {
     "@huggingface/transformers": "^4.0.0"
